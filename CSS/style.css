@@ -1,0 +1,173 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;   
+}:root{
+    --main-color:#bfa065;
+    --sec-color:#a4a1a0;
+    --back-color:#eaeaec;
+    --section-padding: 60px;
+}html{
+    scroll-behavior:smooth;
+}body{
+    font-family: "Open Sans",sans-serif;
+}ul{
+    list-style: none;
+}.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left:auto;
+    margin-right:auto;
+}
+@media(min-width:768px){
+    .container{
+        width: 720px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}.header{
+    background-image: url(../image/1.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding-top:var(--section-padding) ;
+    padding-bottom: 240px ;
+}.header .container .img-header h1{
+    font-family: 'Oswald', sans-serif;
+    color: var(--main-color);
+    font-size: 80px;
+}.header .container .img-header p{
+    color: var(--sec-color);
+    margin: 40px 0;
+    line-height: 25px;
+}.header .container .img-header button{
+    color: var(--sec-color);
+    border: 2px var(--main-color)solid ;
+    padding: 10px 30px ;
+    background-color: transparent;
+    border-radius: 50px;
+}.features{
+    background-color: var(--back-color);
+    padding-top: var(--section-padding);
+    padding-bottom: 90px ;
+}.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px ;
+}.features .container .feat{
+    background-color: white;
+    text-align: center;
+    height:280px ;
+    margin-top: -130px;
+}[class*="eicon-"]{
+    height: 4em;
+    width: 4em;
+    margin: 30px auto;
+}.features .container .feat h3{
+    padding:5px ;
+}.features .container .feat p{
+    color: var(--sec-color);
+    padding: 10px ;
+    line-height: 1.6;
+    font-size: 17px;
+}.landing{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}.landing .container h1{
+    text-align: center;
+}.landing .container p{
+    text-align: center;
+    padding: 10px ;
+    line-height: 25px;
+    font-size: 17px;
+    line-height: 1.6;
+}.landing .container .imge{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px;
+    margin-top: 30px ;
+}.landing .container .imge img{
+    max-width: 100%; 
+}.center{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--back-color);
+}.center .container h1{
+    text-align: center;
+}.center .container .tit{
+    padding: 10px ;
+    line-height: 25px;
+    font-size: 17px;
+    text-align: center;
+}.center .container .text-in{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns:  repeat(auto-fill,minmax(250px,1fr));
+    gap: 30px ;
+}.center .container .text-in .text h3{
+    padding: 10px 0 ;
+}.center .container .text-in .text p{
+    color: var(--sec-color);
+    padding: 10px 0;
+    line-height: 1.6;
+    font-size: 17px;
+}.center .container button{
+    color: var(--sec-color);
+    border: 2px var(--main-color)solid ;
+    padding: 10px 30px ;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-top: 50px; 
+}.section .container{
+    padding-top: var(--section-padding) ;
+    padding-bottom: var(--section-padding);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 30px ;
+}.section .container .img img{
+    max-width: 100%;
+    height: 290px;
+}.section .container .text-about {
+    border: 2px solid var(--main-color);
+}.section .container .text-about h2{
+    padding: 50px 20px 20px 20px ;
+}.section .container .text-about p{
+    padding-left: 20px  ;
+    font-size: 16px;
+    line-height: 1.6;
+}.footer {
+    padding-top: var(--section-padding) ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+}.footer .left img{
+    max-width: 100%;
+    height: 800px;
+}.footer .right{
+    background-color: var(--back-color);
+    padding-left: 50px;
+    padding-top: 125px;
+}.footer .right h1{
+    padding: 20px 20px 0 20px ;
+}.footer .right p{
+    padding: 20px ;
+    line-height: 1.6;
+    font-size: 16px;
+}.footer .right button{
+    color: var(--sec-color);
+    border: 2px var(--main-color)solid ;
+    padding: 10px 30px ;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
